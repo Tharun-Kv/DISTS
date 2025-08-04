@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Tender - DISTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/p1Rjm13/logo.png" alt="DISTS Logo">
+            <h1>DISTS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="government.html" class="active"><i class="fas fa-gavel"></i> Regulatory Authorities</a></li>
+                <li><a href="hospitals.html"><i class="fas fa-hospital"></i> Hospitals</a></li>
+                <li><a href="manufacturers.html"><i class="fas fa-industry"></i> Manufacturers</a></li>
+                <li><a href="agencies.html"><i class="fas fa-building"></i> Agencies</a></li>
+                <li><a href="transport.html"><i class="fas fa-truck"></i> Transport</a></li>
+                <li><a href="patients.html"><i class="fas fa-user"></i> Patients</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tender-form-section">
+            <h1>Create New Tender</h1>
+            <form action="#" method="POST" class="tender-form">
+                <div class="form-group">
+                    <label for="tender-title">Tender Title:</label>
+                    <input type="text" id="tender-title" name="tender-title" placeholder="Enter tender title" required>
+                </div>
+                <div class="form-group">
+                    <label for="tender-description">Description:</label>
+                    <textarea id="tender-description" name="tender-description" placeholder="Describe the tender" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Required Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Submission Deadline:</label>
+                    <input type="date" id="deadline" name="deadline" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget (in $):</label>
+                    <input type="number" id="budget" name="budget" placeholder="Enter budget" required>
+                </div>
+                <div class="form-group">
+                    <label for="file-upload">Upload Tender Document:</label>
+                    <input type="file" id="file-upload" name="file-upload" required>
+                </div>
+                <button type="submit" class="btn">Submit Tender</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DISTS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

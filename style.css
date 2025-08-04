@@ -219,7 +219,9 @@ nav ul li a.active {
 .batch-approval-section,
 .tender-participation-section,
 .track-shipments-section,
-.past-orders-section {
+.past-orders-section,
+.add-stock-form,
+.alerts-form-section {
     background-color: #cad2c5;
     padding: 2rem;
     max-width: 900px;
