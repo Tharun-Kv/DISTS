@@ -1,0 +1,971 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #2f3e46;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #354f52;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background-color: #52796f;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.cta-btn {
+    background-color: #84a98c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.users {
+    padding: 50px;
+    text-align: center;
+}
+
+.users h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.user-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.user-card {
+    background-color: #f4f4f9;
+    border: 1px solid #354f52;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.user-card i {
+    font-size: 3rem;
+    color: #52796f;
+}
+
+.user-card h4 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.cta-link {
+    background-color: #84a98c;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Basic styles for the header, same as the other pages */
+header {
+    background-color: #52796f;
+    padding: 1rem;
+    color: white;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #84a98c;
+}
+
+/* Form styling */
+.tender-form-section {
+    background-color: #cad2c5;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.tender-form-section h1 {
+    color: #2f3e46;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tender-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #354f52;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.form-group input[type="file"] {
+    padding: 0;
+}
+
+.btn {
+    background-color: #52796f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #354f52;
+}
+
+/* Footer styling */
+footer {
+    background-color: #52796f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Basic styles for the header, same as the other pages */
+header {
+    background-color: #52796f;
+    padding: 1rem;
+    color: white;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #84a98c;
+}
+
+/* Form styling */
+.alerts-form-section {
+    background-color: #cad2c5;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.alerts-form-section h1 {
+    color: #2f3e46;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.alerts-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #354f52;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    background-color: #52796f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #354f52;
+}
+
+/* Footer styling */
+footer {
+    background-color: #52796f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Basic styles for the header, same as the other pages */
+header {
+    background-color: #52796f;
+    padding: 1rem;
+    color: white;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #84a98c;
+}
+
+/* Shipment tracking section styling */
+.track-shipments-section {
+    background-color: #cad2c5;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.track-shipments-section h1 {
+    color: #2f3e46;
+    margin-bottom: 1rem;
+}
+
+.track-shipments-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #354f52;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    background-color: #52796f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #354f52;
+}
+
+/* Tracking information styling */
+.tracking-info {
+    margin-top: 2rem;
+    background-color: #e9f1ee;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #84a98c;
+    color: #2f3e46;
+}
+
+footer {
+    background-color: #52796f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #354f52;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Inventory Management Section */
+.inventory-management-section {
+    background-color: #cad2c5;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.inventory-management-section h1 {
+    color: #2f3e46;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Inventory list table styling */
+.inventory-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.inventory-list table, .inventory-list th, .inventory-list td {
+    border: 1px solid #84a98c;
+}
+
+.inventory-list th, .inventory-list td {
+    padding: 1rem;
+    text-align: left;
+    color: #2f3e46;
+}
+
+.inventory-list th {
+    background-color: #52796f;
+    color: white;
+}
+
+.inventory-list td input {
+    padding: 0.5rem;
+    width: 60px;
+}
+
+.btn-update {
+    background-color: #52796f;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-update:hover {
+    background-color: #354f52;
+}
+
+/* Add stock form styling */
+.add-stock-form {
+    background-color: #e9f1ee;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #84a98c;
+}
+
+.add-stock-form h2 {
+    color: #2f3e46;
+    margin-bottom: 1.5rem;
+}
+
+.add-stock-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.add-stock-form .form-group label {
+    font-weight: bold;
+    color: #354f52;
+}
+
+.add-stock-form .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.add-stock-form .btn {
+    background-color: #52796f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.add-stock-form .btn:hover {
+    background-color: #354f52;
+}
+
+/* Tender Participation Section */
+.tender-participation-section {
+    background-color: #f0efeb;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.tender-participation-section h1 {
+    color: #2f3e46;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Tender list table styling */
+.tender-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.tender-list table, .tender-list th, .tender-list td {
+    border: 1px solid #84a98c;
+}
+
+.tender-list th, .tender-list td {
+    padding: 1rem;
+    text-align: left;
+    color: #2f3e46;
+}
+
+.tender-list th {
+    background-color: #52796f;
+    color: white;
+}
+
+.btn-participate {
+    background-color: #52796f;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-participate:hover {
+    background-color: #354f52;
+}
+
+/* Participate form styling */
+.participate-form {
+    background-color: #e9f1ee;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #84a98c;
+}
+
+.participate-form h2 {
+    color: #2f3e46;
+    margin-bottom: 1.5rem;
+}
+
+.participate-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.participate-form .form-group label {
+    font-weight: bold;
+    color: #354f52;
+}
+
+.participate-form .form-group input, 
+.participate-form .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.participate-form .form-group input[type="file"] {
+    padding: 0.5rem;
+}
+
+.participate-form .btn {
+    background-color: #52796f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.participate-form .btn:hover {
+    background-color: #354f52;
+}
+
+/* Batch Approval Section */
+.batch-approval-section {
+    background-color: #f0efeb;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.batch-approval-section h1 {
+    color: #2f3e46;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Batch list table styling */
+.batch-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.batch-list table, .batch-list th, .batch-list td {
+    border: 1px solid #84a98c;
+}
+
+.batch-list th, .batch-list td {
+    padding: 1rem;
+    text-align: left;
+    color: #2f3e46;
+}
+
+.batch-list th {
+    background-color: #52796f;
+    color: white;
+}
+
+.btn-approve {
+    background-color: #52796f;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-approve:hover {
+    background-color: #354f52;
+}
+
+/* Batch form styling */
+.batch-form {
+    background-color: #e9f1ee;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #84a98c;
+}
+
+.batch-form h2 {
+    color: #2f3e46;
+    margin-bottom: 1.5rem;
+}
+
+.batch-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.batch-form .form-group label {
+    font-weight: bold;
+    color: #354f52;
+}
+
+.batch-form .form-group input, 
+.batch-form .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.batch-form .form-group input[type="file"] {
+    padding: 0.5rem;
+}
+
+.batch-form .btn {
+    background-color: #52796f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.batch-form .btn:hover {
+    background-color: #354f52;
+}
+
+/* Past Orders Section */
+.past-orders-section {
+    background-color: #f0efeb;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.past-orders-section h1 {
+    color: #2f3e46;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Past Orders table styling */
+.order-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.order-list table, .order-list th, .order-list td {
+    border: 1px solid #84a98c;
+}
+
+.order-list th, .order-list td {
+    padding: 1rem;
+    text-align: left;
+    color: #2f3e46;
+}
+
+.order-list th {
+    background-color: #52796f;
+    color: white;
+}
+
+/* Monitoring Standards Section */
+.monitoring-standards-section {
+    background-color: #f0efeb;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+/* Receive Statements Section */
+.receive-statements-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.receive-statements-section h1 {
+    color: #1a535c;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Statements table styling */
+.statements-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.statements-table table, .statements-table th, .statements-table td {
+    border: 1px solid #1a535c;
+}
+
+.statements-table th, .statements-table td {
+    padding: 1rem;
+    text-align: left;
+    color: #2f3e46;
+}
+
+.statements-table th {
+    background-color: #4ecdc4;
+    color: white;
+}
+
+.statements-table a {
+    color: #1a535c;
+    text-decoration: none;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #52796f;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #354f52;
+    color: #fff;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.login-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.login-section h2 {
+    margin-top: 0;
+}
+
+.login-section form {
+    display: inline-block;
+    text-align: left;
+}
+
+.login-section label, .login-section select, .login-section button {
+    display: block;
+    margin: 10px 0;
+}
+
+.login-section select, .login-section button {
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.feature {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #354f52;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Login Section Styles */
+.login-section form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-section input[type="text"],
+.login-section input[type="email"],
+.login-section input[type="password"],
+.login-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-section button {
+    background-color: #52796f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-section button:hover {
+    background-color: #354f52;
+}
+
+
+.monitoring-standards-section h1 {
+    color: #2f3e46
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-options {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
